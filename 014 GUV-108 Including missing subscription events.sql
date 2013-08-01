@@ -13,7 +13,7 @@ group by tp.customer_guid, tp.partner, tp.country;
 --------------------------------------------------------------------------------
 --                             guvera_subscription                            --
 --------------------------------------------------------------------------------
-create or replace view guvera_subscription as
+create or replace view guvera_*hiccup*subscription as
 select guid, customer_guid, customer_id, partner, country, start_time, subscription,
 case when start_time < timestamp '2013-07-03 01:00'
        or (
